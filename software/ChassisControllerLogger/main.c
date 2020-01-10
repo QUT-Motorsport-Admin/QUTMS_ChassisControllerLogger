@@ -5,21 +5,6 @@ uint16_t ignitionStateDebounceCount = 0;
 uint8_t ignitionStateLock = 0;
 uint8_t ignitionState = 0;
 
-uint8_t isArmedState = 0;
-uint8_t prevArmedState = 0;
-uint8_t isSirenOn = 0;
-static uint16_t sirenOnDuration = 2000; // 2000 milliseconds = 2 seconds
-uint16_t sirenOnCount = 0;
-static uint16_t preChargeOnDuration = 250; // 2000 milliseconds = 2 seconds
-uint16_t preChargeOnCount = 0;
-uint8_t isPreChargeOn = 0;
-uint8_t isContactorHighOn = 0;
-
-uint8_t isBrakeLightOn = 0;
-uint8_t isCoolingPumpLeftOn = 1;
-uint8_t isCoolingPumpRightOn = 1;
-uint8_t isCoolingFanLeftOn = 1;
-uint8_t isCoolingFanRightOn = 1;
 
 uint8_t shutdownState = 0;
 
@@ -40,7 +25,6 @@ int main(void) {
 
     // Grab the state of the shutdown circuity
     shutdownState = 0;
-    isSirenOn = 0;
     _delay_ms(500);
     // Enable Interupts
     sei();

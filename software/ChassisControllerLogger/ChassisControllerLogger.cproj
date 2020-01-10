@@ -226,13 +226,7 @@
     <None Include="chassisCAN.lst">
       <SubType>compile</SubType>
     </None>
-    <None Include="chassisError.lst">
-      <SubType>compile</SubType>
-    </None>
     <None Include="chassisInit.lst">
-      <SubType>compile</SubType>
-    </None>
-    <None Include="chassisInput.lst">
       <SubType>compile</SubType>
     </None>
   </ItemGroup>
